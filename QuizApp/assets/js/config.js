@@ -9,9 +9,9 @@ let _questionTime;
 let _questionSkipTime;
 
 const defaultValues = {
-    questionCount: 10,
-    questionTime: 5,
-    questionSkipTime: 10
+    questionCount: 5,
+    questionTime: 15,
+    questionSkipTime: 5
 };
 localStorage.setItem('quizSettings', JSON.stringify(defaultValues));
 
