@@ -1,0 +1,44 @@
+
+.nav-container {
+    height: 96px;
+    padding:24px 80px 24px 80px;
+}
+
+
+.logo{
+    font-size: 32px;
+    line-height: 35px;
+    font-weight: 700;
+    color: var(--primary);
+    /*soft*/
+    transition: all 0.3s ease;
+}
+.logo:hover{
+    color: var(--primary);
+    text-shadow: 0 0 10px var(--primary);
+    /*soft*/
+    transition: all 0.3s ease;
+}
+
+.nav-link{
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.9px;
+    color: var(--primary) !important;
+    /*soft*/
+    transition: all 0.3s ease;
+    padding: 12px 8px;         
+}
+.nav-link:hover{
+    color: var(--primary);
+    text-shadow: 0 0 10px var(--primary);
+    /*soft*/
+    transition: all 0.3s ease;
+}
+
+/******* Mobil Section ********/
+@media screen and (max-width: 768px) {
+    .nav-container {
+        padding: 16px;
+    }
+}

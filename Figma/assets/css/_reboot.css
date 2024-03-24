@@ -1,0 +1,9 @@
+
+* {
+    outline: none ;
+    box-sizing: border-box;
+}
+.mb-0 {
+    margin: 0 !important;
+}
+

@@ -1,0 +1,103 @@
+/* Sign up Button */
+.btn-sign-up{
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    border-radius: 8px;
+    padding: 12px;
+    height: 48px;
+    width: 149px;
+    background-color: transparent;
+    transition: all 0.3s ease;
+}
+.btn-sign-up:hover{
+    background-color: var(--primary);
+    color: var(--white);
+    transition: all 0.3s ease;
+}
+.btn-sign-up p {
+    display: contents;
+    padding: 0px 16px;
+    
+}
+.btn-sign-up-white{
+    color: var(--white);
+    border: 2px solid var(--white);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    padding: 12px;
+    height: 48px;
+    width: 233px;
+    background-color: transparent;
+    transition: all 0.3s ease;
+
+}
+.btn-sign-up-white:hover{
+    background-color: var(--white);
+    color: var(--secondary);
+    transition: all 0.3s ease;
+}
+/* Sign up Button */
+
+/* Watch Button */
+.btn-watch{
+    border: none;
+    border-radius: 8px;
+    color: var(--primary);
+    padding: 12px;
+    height: 48px;
+    width: 149px;
+    background-color: transparent;
+    transition: all 0.5s ease;
+}
+.btn-watch p{
+    display: contents;
+    margin: 0px 8px;
+}
+.btn-watch img{
+    transition: all 0.3s ease;
+    margin-right: 8px;
+}
+.btn-watch:hover{
+    background-color: var(--primary);
+    color: var(--white);
+    transition: all 0.3s ease;
+}
+.btn-watch:hover img{
+    filter: brightness(0) invert(1);
+    transition: all 0.s ease;
+}
+
+
+/* Watch Button end */
+
+/* buy now button */
+.btn-buy-now{
+    display: inline-flex;
+    justify-content: center;
+    border: 2px solid var(--white);
+    border-radius: 8px;
+    color: var(--white);
+    padding: 16px;
+    height: 56px;
+    
+    background-color: transparent;
+    transition: all 0.3s ease;
+}
+svg{
+    fill: var(--white);
+    transition: all 0.3s ease;
+}
+
+.btn-buy-now:hover{
+    background-color: var(--white);
+    color: var(--secondary);
+    transition: all 0.3s ease;
+}
+.btn-buy-now:hover svg{
+    fill: var(--secondary);
+    transition: all 0.3s ease;
+}
+
+
+
+

@@ -1,0 +1,98 @@
+
+
+/* Hero Section */
+.hero-container {
+    background-image: url('../img/hero-bg.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hero-section {
+    
+    padding: 80px 0px;
+}
+.hero-section h1 {
+    font-size: 72px;
+    line-height: 80px;
+
+    color: var(--secondary);
+    margin-bottom: 24px;
+}
+.hero-content{
+    margin-right: 80px;
+}
+.hero-content .p-content {
+    font-size: 18px;
+    line-height: 30px;
+    color: var(--secondary);
+}
+.hero-img img{
+    width:100%;
+}
+
+.hero-section .sub-tittle {
+    font-size: 20px;
+    line-height: 22px;
+    color: var(--secondary);
+}
+.hero-section .sub-text{
+    font-size: 18px;
+    line-height: 30px;
+    color: var(--secondary);
+}
+
+.hero-sub{
+    padding: 80px 0px;
+    gap: 0px 80px; 
+}
+
+/* Hero Section end*/
+
+/* Best Seller Section */
+.best-container {
+    padding: 80px 0px;
+    background-color: var(--secondary);
+}
+
+
+.best-container .card {
+    border: 1px solid var(--secondary); 
+    overflow: hidden;
+    box-shadow: 0px 0px 15px 0px #FFFFFF12;
+    box-shadow: 0px 25px 50px -12px #FFFFFF40;
+
+}
+
+.best-container .card-body {
+    padding: 32px !important;
+    background-color: var(--secondary);
+}
+.custom-card-img{
+    scale: 1.01 !important;
+}
+.best-container .card-body > .card-title, .card-text {
+    color: var(--white);
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.best-container .best-cards {
+    gap: 0px 24px;
+}
+
+
+/******* Mobil Section ********/
+@media screen and (max-width: 768px) {
+
+    
+
+    /* Hero Section Mobil*/
+    .row {
+        flex-direction: column;
+    }
+    .hero-section {
+        padding: 48px 0px;
+    }
+    .hero-content{
+
+    }
+}
