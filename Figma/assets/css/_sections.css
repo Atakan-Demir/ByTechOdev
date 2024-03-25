@@ -53,6 +53,9 @@
     background-color: var(--secondary);
 }
 
+.best-container .best-title h2{
+    color: var(--white);
+}
 
 .best-container .card {
     border: 1px solid var(--secondary); 
@@ -69,15 +72,185 @@
 .custom-card-img{
     scale: 1.01 !important;
 }
-.best-container .card-body > .card-title, .card-text {
+.best-container .card-body > .card-title, .best-container .card-body > .card-text {
     color: var(--white);
     font-size: 18px;
     line-height: 30px;
 }
+            /* best card first child
+.best-container .col:first-child .test{
+    position: absolute;
+    top: 100px;  
+} */
 
-.best-container .best-cards {
+/* .best-container .best-cards {
+    background-image: url('/assets/img/Backlights.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+
     gap: 0px 24px;
+} */
+/* Best Seller Section end*/
+
+
+/* Join Section */
+.join-container {
+    padding: 160px 0px;
+    
 }
+.join-card {
+    border: 1px solid var(--white); 
+    background-color: var(--white);
+    overflow: hidden;
+    border-radius: 30px;
+    padding: 120px 80px !important;
+    box-shadow: 0px 0px 10px 0px #00000012;
+    box-shadow: 0px 10px 35px -5px #0000002f;
+
+}
+
+.join-bg{
+    position: absolute;
+    z-index: 0;
+    margin-top: calc(-7% - 200px);
+    margin-left: -30px;
+    
+}
+.join-img{
+    position: absolute;
+    z-index: 1;
+    margin-top: -12%;
+    
+}
+
+
+/* Join Section End */
+
+
+
+/* Testimonial Section */
+
+.testimonial-container {
+    padding: 80px 0px !important;
+    
+}
+
+.testimonial-bg{
+    position: absolute;
+    width: 80%;
+    height: 93%;
+    background-color: var(--quaternary);
+    margin-top: -1%;
+    margin-left: 10%;
+}
+
+/* Testimonial Section End */
+
+
+/* Collection Section */
+.collection-container {
+    background-image: url('../img/collection-bg.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 80px 0px 130px 0px;
+}
+.collection-container .container-fluid{
+    gap: 80px 0px;
+}
+.collection-container h2{
+    color: var(--secondary);
+}
+.collection-container p{
+    font-size: 18px;
+    line-height: 30px;
+    color: var(--secondary);
+}
+
+/* Collection Section End */
+
+/* Statistic Section */
+.statistic-container {
+    background-color: var(--primary);
+    padding: 42px 80px;
+    
+}
+
+.statistic-bg {
+    background-image: url(../img/statistic-bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 717px;
+    
+}
+.custom-h1{
+    font-size: 96px !important;
+    line-height: 105px !important;
+}
+
+/* Statistic Section end*/
+
+/* Footer Section */
+
+.footer-container {
+    background-color: var(--secondary);
+
+}
+.footer-container .footer-content{
+    padding: 48px 0px;
+    border-bottom: 1px solid #334155;
+}
+.footer-container .footer-content p{
+    font-size: 16px;
+    line-height: 18px;
+    padding: 12px 0px;
+    
+    
+}
+.footer-container .footer-content a,.footer-container .footer-sub a{
+    color: var(--footerText);
+    font-size: 16px;
+    line-height: 22px;
+    padding: 12px 0px;
+}
+.footer-container .footer-sub{
+    padding: 24px 0px;
+
+}
+.footer-container .footer-sub p {
+    color: var(--footerText);
+    line-height: 22px;
+}
+
+/* Footer Section end*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /******* Mobil Section ********/
@@ -92,7 +265,5 @@
     .hero-section {
         padding: 48px 0px;
     }
-    .hero-content{
-
-    }
+    
 }

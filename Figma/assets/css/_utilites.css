@@ -2,6 +2,8 @@
     --primary: #78350F;
     --secondary: #0F172A;
     --tertiary: #FEF3C7;
+    --quaternary:#FDE68A;
+    --footerText: #E2E8F0;
     --sub-text: #475569;
     --white: #FFFFFF;
     --black: #000000;
@@ -15,6 +17,11 @@ body {
 a {
     text-decoration: none !important;
 }
+h2{
+    font-size: 56px !important;
+    line-height: 62px !important;
+}
+ 
 .roboto-100 {
     font-weight: 100 !important;
 }
@@ -39,6 +46,9 @@ a {
 .gap-16 {
     gap: 16px;
 }
+.gap-16-v {
+    column-gap: 16px;
+}
 .gap-32{
     gap: 32px;
 }
@@ -46,3 +56,10 @@ a {
     gap: 80px;
 }
 
+
+.shadowed {
+    -webkit-filter: drop-shadow(0px 25px 50px 12px #00000040);
+    filter: url(#drop-shadow);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+    filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+}

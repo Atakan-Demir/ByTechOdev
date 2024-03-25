@@ -1,0 +1,48 @@
+
+/* Testimonial Slider*/
+
+.testimonial-container .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+.testimonial-container .swiper-slide {
+    
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0px;
+  }
+
+.testimonial-container .swiper .swiper-wrapper .swiper-slide .card{
+    padding: 2rem !important;
+    border-radius: 20px;
+    border: 1px solid var(--white);
+    box-shadow: 0px 10px 15px -3px #0000001A;
+    
+}
+.testimonial-container .swiper .swiper-wrapper .swiper-slide .card .card-body{
+    height: 100% !important;
+}
+.testimonial-container .swiper .swiper-wrapper .swiper-slide .card .card-body .comment{
+    font-size: 24px;
+    line-height: 38px;
+    color: var(--black);
+
+}
+.testimonial-container .swiper .swiper-wrapper .swiper-slide .card .card-body .comment-name{
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--black);
+}
+.testimonial-container .swiper .swiper-wrapper .swiper-slide .card .card-body .comment-stat{
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--sub-text);
+}
+
+
+
+
+/* Testimonial Slider end*/
