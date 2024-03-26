@@ -20,60 +20,45 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
 
 </head>
 
 <body>
     <!-- Navbar -->
     <div class="nav-container">
-        <nav class="navbar navbar-expand-lg d-flex justify-content-between">
-            <div class="container align-items-center">
-                <div>
-                    <a class="logo" href="#">Collers</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <img src="./assets/icon/menu-ico.svg" alt="menu">
-                    </button>
-
-                </div>
-                <div class="">
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center gap-16">
-                            <li class="nav-item">
-                                <a class="nav-link roboto-500" aria-current="page" href="#">Products</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link roboto-500" href="#">Solutions</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link roboto-500" href="#">Pricing</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link roboto-500" href="#">Resources</a>
-                            </li>
-                            <li class="nav-item roboto-500">
-                                <a class="nav-link" href="#">Log In</a>
-                            </li>
-                            <li class="nav-item">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <nav class="navbar navbar-expand-lg">
+                        <a class="logo" href="#">Collers</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                            <span ><img src="./assets/icon/menu-ico.svg" alt="menu"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                            <div class="navbar-nav">
+                                <a class="nav-link roboto-500 me-3" aria-current="page" href="#">Products</a>
+                                <a class="nav-link roboto-500 me-3" href="#">Solutions</a>
+                                <a class="nav-link roboto-500 me-3" href="#">Pricing</a>
+                                <a class="nav-link roboto-500 me-3" href="#">Resources</a>
+                                <a class="nav-link roboto-500 me-3" href="#">Log In</a>
+                                
                                 <button class="btn-sign-up roboto-500">
                                     <p>Sign Up Now</p>
                                 </button>
-                            </li>
-                        </ul>
-
-                    </div>
+                            </div>
+                        </div>
+                    </nav>
                 </div>
             </div>
-        </nav>
+        </div>
     </div>
     <!-- Navbar End -->
 
     <!-- Hero Section -->
     <div class="hero-container">
         <div class="container">
+
             <div class="row justify-content-between align-items-center hero-section">
                 <div class="col-12 col-md-8 order-md-1">
                     <div class="hero-content">
@@ -111,7 +96,7 @@
                 </div>
                 <div class="col">
                     <div class="">
-                        <img src="./assets/icon/hero2-col1.svg" alt="hero-img" class="mb-3">
+                        <img src="./assets/icon/hero2-col2.svg" alt="hero-img" class="mb-3">
                         <p class="sub-title roboto-500 ">Cursus amet</p>
                         <p class="sub-text roboto-400 mb-0">Sit bibendum donec dolor fames neque vulputate non sit
                             aliquam. Consequat turpis natoque leo, massa. </p>
@@ -119,7 +104,7 @@
                 </div>
                 <div class="col">
                     <div class="">
-                        <img src="./assets/icon/hero2-col1.svg" alt="hero-img" class="mb-3">
+                        <img src="./assets/icon/hero2-col3.svg" alt="hero-img" class="mb-3">
                         <p class="sub-title roboto-500">Ipsum fermentum</p>
                         <p class="sub-text roboto-400 mb-0">Sit bibendum donec dolor fames neque vulputate non sit
                             aliquam. Consequat turpis natoque leo, massa. </p>
@@ -146,8 +131,12 @@
                 </div>
             </div>
             <div class="row best-cards mt-5">
-                <div class="col">
-                    <!-- <img src="./assets/img/card-1-rect-1.svg"> -->
+                <div class="col best-realitive">
+                    <img src="./assets/img/card-1-rect-1.svg" class="rect1">
+                    <img src="./assets/img/card-1-rect-2.svg" class="rect2">
+                    <img src="./assets/img/card-1-rect-3.svg" class="rect3">
+                    <img src="./assets/img/card-1-rect-4.svg" class="rect4">
+                    <img src="./assets/img/card-1-rect-5.svg" class="rect5">
                     <div class="card">
                         <img class="card-img-top custom-card-img" src="./assets/img/best-1.png" alt="Card image cap">
                         <div class="card-body">
@@ -211,10 +200,10 @@
 
     <!-- Join Section -->
     <div class="join-container">
-        <div class="container join-card">
-            <div class="row align-items-center">
+        <div class="container join-card overflow-visible">
+            <div class="row align-items-center overflow-visible">
                 <div class="col join-content">
-                    <h2 class="roboto-800 mb-4">Join the community</h2>
+                    <h2 class="roboto-800 mb-4">Why join us</h2>
                     <ul class="list-unstyled">
                         <li class="mb-1"><img src="./assets/icon/check.svg" alt="check">Est et in pharetra magna
                             adipiscing ornare aliquam.</li>
@@ -228,11 +217,12 @@
                     </button>
 
                 </div>
-                <div class="col" style="width: 100%;">
+                <div class="col join-realitive overflow-visible" style="width: 100%;">
 
                     <div class="join-bg">
                         <img src="./assets/img/joing-bg.svg" alt="Video">
                     </div>
+                    <img src="./assets/img/circle-green.svg" alt="Green Circle" class="circle-green">
                     <div class="join-img">
                         <img src="./assets/img/Video.png" alt="Video" class="shadowed">
                     </div>
@@ -318,8 +308,8 @@
 
                         <div class="card-body">
                             <img class="" src="/assets/img/comment-logo-3.png" alt="Comment logo 3">
-                            <p class="comment roboto-400">A eget sed posuere dui risus habitasse mauris. Venenatis
-                                aliquet id ultrices a lacus. Pretium vehicula pretium posuere justo sed.</p>
+                            <p class="comment roboto-400">Aliquet ridiculus mi porta habitant vulputate rhoncus, mattis
+                                amet enim. Sit purus venenatis velit semper lectus sed ornare quam nulla.</p>
                             <div class="d-flex">
                                 <div>
                                     <img src="./assets/img/comment-user-3.png" alt="User Comment 3">
@@ -375,8 +365,8 @@
 
                         <div class="card-body">
                             <img class="" src="/assets/img/comment-logo-3.png" alt="Comment logo 3">
-                            <p class="comment roboto-400">A eget sed posuere dui risus habitasse mauris. Venenatis
-                                aliquet id ultrices a lacus. Pretium vehicula pretium posuere justo sed.</p>
+                            <p class="comment roboto-400">Aliquet ridiculus mi porta habitant vulputate rhoncus, mattis
+                                amet enim. Sit purus venenatis velit semper lectus sed ornare quam nulla.</p>
                             <div class="d-flex">
                                 <div>
                                     <img src="./assets/img/comment-user-3.png" alt="User Comment 3">
@@ -432,8 +422,8 @@
 
                         <div class="card-body">
                             <img class="" src="/assets/img/comment-logo-3.png" alt="Comment logo 3">
-                            <p class="comment roboto-400">A eget sed posuere dui risus habitasse mauris. Venenatis
-                                aliquet id ultrices a lacus. Pretium vehicula pretium posuere justo sed.</p>
+                            <p class="comment roboto-400">Aliquet ridiculus mi porta habitant vulputate rhoncus, mattis
+                                amet enim. Sit purus venenatis velit semper lectus sed ornare quam nulla.</p>
                             <div class="d-flex">
                                 <div>
                                     <img src="./assets/img/comment-user-3.png" alt="User Comment 3">
@@ -468,61 +458,140 @@
             </div>
             <div class="container mt-5 collaction-main">
                 <div class="row">
-                    <div class="col-3">
-                        <div class="d-flex align-items-start">
+                    <div class="col">
+                        <div class="d-flex align-items-center overflow-hidden">
                             <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist"
                                 aria-orientation="vertical">
-                                <button
-                                    class="nav-link btn-collection mb-3 active roboto-500 d-flex align-items-center justify-content-between"
-                                    id="v-pills-search-tab" data-bs-toggle="pill" data-bs-target="#v-pills-search"
-                                    type="button" role="tab" aria-controls="v-pills-search" aria-selected="true">
-                                    <div><img src="./assets/icon/search.svg" alt="Search" class="me-2">
-                                        <p>Bibendum Tellus</p>
-                                    </div><img src="./assets/icon/arrow-right.svg" alt="Right Arrow" class="arrow-on">
-                                </button>
-                                <button
-                                    class="nav-link btn-collection mb-3 roboto-500 d-flex align-items-center justify-content-between"
-                                    id="v-pills-guard-tab" data-bs-toggle="pill" data-bs-target="#v-pills-guard"
-                                    type="button" role="tab" aria-controls="v-pills-guard" aria-selected="false">
-                                    <div><img src="./assets/icon/shield-check.svg" alt="Sheild Check" class="me-2">
-                                        <p>Cras eget</p>
-                                    </div><img src="./assets/icon/arrow-right.svg" alt="Right Arrow" class="arrow-off">
-                                </button>
-                                <button
-                                    class="nav-link btn-collection mb-3 roboto-500 d-flex align-items-center justify-content-between"
-                                    id="v-pills-rocket-tab" data-bs-toggle="pill" data-bs-target="#v-pills-rocket"
-                                    type="button" role="tab" aria-controls="v-pills-rocket" aria-selected="false">
-                                    <div><img src="./assets/icon/rocket.svg" alt="Rocket" class="me-2">
-                                        <p>Dolor pharetra</p>
-                                    </div><img src="./assets/icon/arrow-right.svg" alt="Right Arrow" class="arrow-off">
-                                </button>
-                                <button
-                                    class="nav-link btn-collection mb-3 roboto-500 d-flex align-items-center justify-content-between"
-                                    id="v-pills-screen-tab" data-bs-toggle="pill" data-bs-target="#v-pills-screen"
-                                    type="button" role="tab" aria-controls="v-pills-screen" aria-selected="false">
-                                    <div><img src="./assets/icon/screen.svg" alt="Screen" class="me-2">
-                                        <p>Amet, fringilla</p>
-                                    </div><img src="./assets/icon/arrow-right.svg" alt="Right Arrow" class="arrow-off">
-                                </button>
-                                <button
-                                    class="nav-link btn-collection mb-3 roboto-500 d-flex align-items-center justify-content-between"
-                                    id="v-pills-podcast-tab" data-bs-toggle="pill" data-bs-target="#v-pills-podcast"
-                                    type="button" role="tab" aria-controls="v-pills-podcast" aria-selected="false">
-                                    <div><img src="./assets/icon/podcast.svg" alt="Podcast" class="me-2">
-                                        <p>Amet nibh</p>
-                                    </div><img src="./assets/icon/arrow-right.svg" alt="Right Arrow" class="arrow-off">
-                                </button>
-                                <button
-                                    class="nav-link btn-collection mb-3 roboto-500 d-flex align-items-center justify-content-between"
-                                    id="v-pills-setting-tab" data-bs-toggle="pill" data-bs-target="#v-pills-setting"
-                                    type="button" role="tab" aria-controls="v-pills-setting" aria-selected="false">
-                                    <div><img src="./assets/icon/settings-alt.svg" alt="Settings" class="me-2">
-                                        <p>Sed velit</p>
-                                    </div><img src="./assets/icon/arrow-right.svg" alt="Right Arrow" class="arrow-off">
-                                </button>
+                                
+                                    <button
+                                        class="nav-link btn-collection mb-3 active roboto-500 d-flex align-items-center justify-content-between desktop-collection"
+                                        id="v-pills-search-tab" data-bs-toggle="pill" data-bs-target="#v-pills-search"
+                                        type="button" role="tab" aria-controls="v-pills-search" aria-selected="true">
+                                        <div><img src="./assets/icon/search.svg" alt="Search" class="me-2">
+                                            <p>Bibendum Tellus</p>
+                                        </div><img src="./assets/icon/arrow-right.svg" alt="Right Arrow"
+                                            class="arrow-on">
+                                    </button>
+                                    <button
+                                        class="nav-link btn-collection mb-3 roboto-500 d-flex align-items-center justify-content-between desktop-collection"
+                                        id="v-pills-guard-tab" data-bs-toggle="pill" data-bs-target="#v-pills-guard"
+                                        type="button" role="tab" aria-controls="v-pills-guard" aria-selected="false">
+                                        <div><img src="./assets/icon/shield-check.svg" alt="Sheild Check" class="me-2">
+                                            <p>Cras eget</p>
+                                        </div><img src="./assets/icon/arrow-right.svg" alt="Right Arrow"
+                                            class="arrow-off">
+                                    </button>
+                                    <button
+                                        class="nav-link btn-collection mb-3 roboto-500 d-flex align-items-center justify-content-between desktop-collection"
+                                        id="v-pills-rocket-tab" data-bs-toggle="pill" data-bs-target="#v-pills-rocket"
+                                        type="button" role="tab" aria-controls="v-pills-rocket" aria-selected="false">
+                                        <div><img src="./assets/icon/rocket.svg" alt="Rocket" class="me-2">
+                                            <p>Dolor pharetra</p>
+                                        </div><img src="./assets/icon/arrow-right.svg" alt="Right Arrow"
+                                            class="arrow-off">
+                                    </button>
+                                    <button
+                                        class="nav-link btn-collection mb-3 roboto-500 d-flex align-items-center justify-content-between desktop-collection"
+                                        id="v-pills-screen-tab" data-bs-toggle="pill" data-bs-target="#v-pills-screen"
+                                        type="button" role="tab" aria-controls="v-pills-screen" aria-selected="false">
+                                        <div><img src="./assets/icon/screen.svg" alt="Screen" class="me-2">
+                                            <p>Amet, fringilla</p>
+                                        </div><img src="./assets/icon/arrow-right.svg" alt="Right Arrow"
+                                            class="arrow-off">
+                                    </button>
+                                    <button
+                                        class="nav-link btn-collection mb-3 roboto-500 d-flex align-items-center justify-content-between desktop-collection"
+                                        id="v-pills-podcast-tab" data-bs-toggle="pill" data-bs-target="#v-pills-podcast"
+                                        type="button" role="tab" aria-controls="v-pills-podcast" aria-selected="false">
+                                        <div><img src="./assets/icon/podcast.svg" alt="Podcast" class="me-2">
+                                            <p>Amet nibh</p>
+                                        </div><img src="./assets/icon/arrow-right.svg" alt="Right Arrow"
+                                            class="arrow-off">
+                                    </button>
+                                    <button
+                                        class="nav-link btn-collection mb-3 roboto-500 d-flex align-items-center justify-content-between desktop-collection"
+                                        id="v-pills-setting-tab" data-bs-toggle="pill" data-bs-target="#v-pills-setting"
+                                        type="button" role="tab" aria-controls="v-pills-setting" aria-selected="false">
+                                        <div><img src="./assets/icon/settings-alt.svg" alt="Settings" class="me-2">
+                                            <p>Sed velit</p>
+                                        </div><img src="./assets/icon/arrow-right.svg" alt="Right Arrow"
+                                            class="arrow-off">
+                                    </button>
+                                
+                                <div class="mobil-collection overflow-x-hidden overflow-hidden swiper2">
+                                    
+    
+                                        <div class="swiper-wrapper overflow-hidden">
+                                            <button
+                                                class="nav-link btn-collection mb-3 active roboto-500 d-flex align-items-center justify-content-between"
+                                                id="v-pills-search-tab-mobil" data-bs-toggle="pill"
+                                                data-bs-target="#v-pills-search-mobil" type="button" role="tab"
+                                                aria-controls="v-pills-search" aria-selected="true">
+                                                <div><img src="./assets/icon/search.svg" alt="Search" class="me-2">
+                                                    <p>Bibendum Tellus</p>
+                                                </div><img src="./assets/icon/arrow-right.svg" alt="Right Arrow"
+                                                    class="arrow-on">
+                                            </button>
+                                            <button
+                                                class="nav-link btn-collection mb-3 roboto-500 d-flex align-items-center justify-content-between swiper-slide"
+                                                id="v-pills-guard-tab-mobil" data-bs-toggle="pill"
+                                                data-bs-target="#v-pills-guard-mobil" type="button" role="tab"
+                                                aria-controls="v-pills-guard" aria-selected="false">
+                                                <div><img src="./assets/icon/shield-check.svg" alt="Sheild Check"
+                                                        class="me-2">
+                                                    <p>Cras eget</p>
+                                                </div><img src="./assets/icon/arrow-right.svg" alt="Right Arrow"
+                                                    class="arrow-off">
+                                            </button>
+                                            <button
+                                                class="nav-link btn-collection mb-3 roboto-500 d-flex align-items-center justify-content-between swiper-slide"
+                                                id="v-pills-rocket-tab-mobil" data-bs-toggle="pill"
+                                                data-bs-target="#v-pills-rocket-mobil" type="button" role="tab"
+                                                aria-controls="v-pills-rocket" aria-selected="false">
+                                                <div><img src="./assets/icon/rocket.svg" alt="Rocket" class="me-2">
+                                                    <p>Dolor pharetra</p>
+                                                </div><img src="./assets/icon/arrow-right.svg" alt="Right Arrow"
+                                                    class="arrow-off">
+                                            </button>
+                                            <button
+                                                class="nav-link btn-collection mb-3 roboto-500 d-flex align-items-center justify-content-between swiper-slide"
+                                                id="v-pills-screen-tab-mobil-mobil" data-bs-toggle="pill"
+                                                data-bs-target="#v-pills-screen" type="button" role="tab"
+                                                aria-controls="v-pills-screen" aria-selected="false">
+                                                <div><img src="./assets/icon/screen.svg" alt="Screen" class="me-2">
+                                                    <p>Amet, fringilla</p>
+                                                </div><img src="./assets/icon/arrow-right.svg" alt="Right Arrow"
+                                                    class="arrow-off">
+                                            </button>
+                                            <button
+                                                class="nav-link btn-collection mb-3 roboto-500 d-flex align-items-center justify-content-between swiper-slide"
+                                                id="v-pills-podcast-tab-mobil" data-bs-toggle="pill"
+                                                data-bs-target="#v-pills-podcast-mobil" type="button" role="tab"
+                                                aria-controls="v-pills-podcast" aria-selected="false">
+                                                <div><img src="./assets/icon/podcast.svg" alt="Podcast" class="me-2">
+                                                    <p>Amet nibh</p>
+                                                </div><img src="./assets/icon/arrow-right.svg" alt="Right Arrow"
+                                                    class="arrow-off">
+                                            </button>
+                                            <button
+                                                class="nav-link btn-collection mb-3 roboto-500 d-flex align-items-center justify-content-between swiper-slide"
+                                                id="v-pills-setting-tab-mobil" data-bs-toggle="pill"
+                                                data-bs-target="#v-pills-setting-mobil" type="button" role="tab"
+                                                aria-controls="v-pills-setting" aria-selected="false">
+                                                <div><img src="./assets/icon/settings-alt.svg" alt="Settings"
+                                                        class="me-2">
+                                                    <p>Sed velit</p>
+                                                </div><img src="./assets/icon/arrow-right.svg" alt="Right Arrow"
+                                                    class="arrow-off">
+                                            </button>
+                                        
+                                  
+                                    </div>
+                                </div>
                             </div>
 
                         </div>
+
                     </div>
                     <div class="col-9">
                         <div class="tab-content" id="v-pills-tabContent">
@@ -633,7 +702,8 @@
                     <a href="#" class="roboto-400 me-4">Terms</a>
                     <a href="#" class="roboto-400 me-4">Privacy</a>
                     <a href="#" class="roboto-400 me-4">Contact</a>
-                    <a href="#" class="roboto-400 "><img src="./assets/icon/world.svg" alt="language" class="me-2">EN</a>
+                    <a href="#" class="roboto-400 "><img src="./assets/icon/world.svg" alt="language"
+                            class="me-2">EN</a>
                 </div>
             </div>
         </div>
@@ -641,6 +711,7 @@
     <!-- Footer end -->
 
     <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>

@@ -2,6 +2,13 @@
 window.addEventListener('load', function () {
 
     slider('.swiper');
+    slider('.swiper2', {
+        slidesPerView: 3,
+        spaceBetween: 20,
+        
+        loop: false,
+        
+    });
 
 });
 
@@ -9,10 +16,18 @@ document.addEventListener('DOMContentLoaded', function () {
     var nextButton = document.getElementById('next-slide');
     var swiperNextButton = document.querySelector('.swiper-button-next');
     var btnCollections = document.querySelectorAll('.btn-collection');
-
+    
+    const joinImgElement = document.querySelector('.join-img');
+    joinImgElement.addEventListener('click', function() {
+        window.open('https://www.youtube.com/watch?v=geFi-ZpN2ZM', '_blank');
+    });
+    
+    
+    
     nextButton.addEventListener('click', function () {
         swiperNextButton.click();
     });
+    
 
     var prevButton = document.getElementById('prev-slide');
     var swiperPrevButton = document.querySelector('.swiper-button-prev');
@@ -41,7 +56,7 @@ function slider(element, options) {
         options = {};
     }
     new Swiper(element, {
-        slidesPerView: options.slidesPerView ? options.slidesPerView : 4,
+        slidesPerView: options.slidesPerView ? options.slidesPerView : 1.2,
         spaceBetween: options.spaceBetween ? options.spaceBetween : 30,
         centeredSlides: options.centeredSlides ? options.centeredSlides : true,
         loop: options.loop ? options.loop : true,
@@ -53,12 +68,27 @@ function slider(element, options) {
         pagination: {
             el: '.swiper-pagination',
             clickable: true,
+        },
+        breakpoints: {
+            640: {
+                slidesPerView: 1,
+                spaceBetween: 20
+            },
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 40
+            },
+            1024: {
+                slidesPerView: 4,
+                spaceBetween: 50
+            },
         }
     })
 }
 
 /* Show Arrow in collectionb button */
 function showArrow(btnCollection) {
+    
     btnCollection.querySelector('img:last-child').classList.remove('arrow-off');
     btnCollection.querySelector('img:last-child').classList.add('arrow-on');
 }
@@ -67,7 +97,7 @@ function showArrow(btnCollection) {
 function hideArros(btnCollections) {
     
     btnCollections.forEach(function (btnCollection) {
-
+        btnCollection.re
         var img = btnCollection.querySelector('img:last-child');
         if(img.classList.contains('arrow-on')){
             img.classList.remove('arrow-on');

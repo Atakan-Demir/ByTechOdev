@@ -5,7 +5,7 @@
 }
 
 
-.logo{
+.nav-container .container .row .col .navbar .logo{
     font-size: 32px;
     line-height: 35px;
     font-weight: 700;
@@ -13,14 +13,14 @@
     /*soft*/
     transition: all 0.3s ease;
 }
-.logo:hover{
+.nav-container .container .row .col .navbar .logo:hover{
     color: var(--primary);
     text-shadow: 0 0 10px var(--primary);
     /*soft*/
     transition: all 0.3s ease;
 }
 
-.nav-link{
+.nav-container .container .row .col .navbar .navbar-collapse .navbar-nav .nav-link{
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.9px;
@@ -29,14 +29,32 @@
     transition: all 0.3s ease;
     padding: 12px 8px;         
 }
-.nav-link:hover{
+.nav-container .container .row .col .navbar .navbar-collapse .navbar-nav .nav-link:hover{
     color: var(--primary);
     text-shadow: 0 0 10px var(--primary);
     /*soft*/
     transition: all 0.3s ease;
 }
 
+.navbar-toggler{
+    border: none !important;
+    background: none !important;
+    color: transparent !important;
+}
+
+
+
 /******* Mobil Section ********/
+@media screen and (max-width: 992px){
+    .nav-container .container .row .col .navbar .navbar-collapse .navbar-nav{
+        background-color: var(--white);
+        border-radius: 8px;
+        padding: 16px;
+        box-shadow: 0 0 10px var(--primary);
+
+    }
+}
+
 @media screen and (max-width: 768px) {
     .nav-container {
         padding: 16px;

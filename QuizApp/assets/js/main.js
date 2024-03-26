@@ -149,6 +149,7 @@ async function startQuiz() {
 
   /************** sonraki soru basla **************/
   function showNextQuestion() {
+    secondsLeft = quizSettings.questionSkipTime;
     currentQuestionIndex++;
     lockIcon.innerHTML = '<i class="bi bi-lock-fill text-danger" data-bs-toggle="tooltip" title="Belirlenen minimum süre dolmadan soruyu geçemezsiniz!"></i>';
     if (currentQuestionIndex < questions.length) {

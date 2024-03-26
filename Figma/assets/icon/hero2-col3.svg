@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="katman_2" data-name="katman 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 106.82 74.75">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke: #78350f;
+        stroke-width: 1.5px;
+      }
+
+      .cls-3 {
+        fill: #a21caf;
+        isolation: isolate;
+        opacity: .5;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g id="katman_1" data-name="katman 1">
+    <g id="_3" data-name="3">
+      <rect class="cls-3" x="48.82" width="58" height="58" rx="25.78" ry="25.78"/>
+      <g>
+        <path class="cls-2" d="M.75,67.02V28.61c0-3.86,3.13-6.98,6.98-6.98h55.86c3.86,0,6.98,3.13,6.98,6.98v38.4c0,3.86-3.13,6.98-6.98,6.98H7.73c-3.86,0-6.98-3.13-6.98-6.98Z"/>
+        <path class="cls-1" d="M23.44,5.92l12.22,12.22,12.22-12.22"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -3,17 +3,22 @@ const questionTimeInput = document.getElementById('question-time');
 const questionSkipTimeInput = document.getElementById('question-skip-time');
 const form = document.querySelector('form');
 const alertContainer = document.getElementById('alert-container'); // Bootstrap alert container
-const quizSettings = getQuizSettings();
+
 let _questionCount;
 let _questionTime;
 let _questionSkipTime;
 
 const defaultValues = {
-    questionCount: 5,
-    questionTime: 15,
-    questionSkipTime: 5
+    questionCount: 10,
+    questionTime: 30,
+    questionSkipTime: 10
 };
+
+const quizSettings = getQuizSettings();
+
 localStorage.setItem('quizSettings', JSON.stringify(defaultValues));
+
+
 
 
 questionCountInput.value = quizSettings.questionCount;

@@ -205,3 +205,27 @@ visibility: visible;
     visibility: hidden;
 }
 /* Collection button end*/
+
+
+@media screen and (max-width: 992px){
+    
+    /*Buy Now button*/
+
+    .btn-buy-now p {
+        display: contents;
+        
+    }
+
+    /* buy now button end*/
+}
+
+@media screen and (max-width: 768px){
+    /*Buy Now button*/
+
+    .btn-buy-now p {
+        display: block;
+        
+    }
+
+    /* buy now button end*/
+}
